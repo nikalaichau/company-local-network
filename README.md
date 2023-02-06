@@ -22,10 +22,9 @@ Switch (config-if)# switchport trunk allowed vlan 1,10
 Switch (config-if)# no shutdown
 Switch (config-if)# exit
 ```
-4) Проверка правильность настроек при помощи команд show run и show vlan brief. .
+4) Проверка правильность настроек при помощи команд show run и show vlan brief. 
 
- ![image](https://user-images.githubusercontent.com/124536839/216854582-49853fa8-3afb-45ed-9c28-ea3d93bba130.png)
-
+![image](https://user-images.githubusercontent.com/124536839/216854582-49853fa8-3afb-45ed-9c28-ea3d93bba130.png)
 Результат выполнения команд на Switch1
 
 5) Создание подсетей на коммутаторах L3 и присваивание им имен. При-мер создания vlan 10 на коммутаторе Multilayer Switch1:
@@ -106,65 +105,48 @@ Switch(config)# interface vlan 60
 Switch (config-if)# ip access-group VLAN60 out
 Switch(config-if)#exit
 ```
-14) Проверка правильность настроек. Результат выполнения команды show vlan brief на Multilayer Switch1представлен на рисунке 8.
+14) Проверка правильность настроек. Результат выполнения команды show vlan brief на Multilayer Switch1.
+![image](https://user-images.githubusercontent.com/124536839/216854632-424c3a06-46fa-4ecc-b48e-6d2640315e26.png)
+Результат выполнения команд на Multilayer Switch1
 
+Результат выполнения команды show interfaces trunk на Multilayer Switch1.
  
+![image](https://user-images.githubusercontent.com/124536839/216854682-05b62ca9-8af4-480f-bdeb-21fbd2acb7e5.png)
+Результат выполнения команд на Multilayer Switch1
 
-Рисунок 8 – Результат выполнения команд на Multilayer Switch1
-Результат выполнения команды show interfaces trunk на Multilayer Switch1представлен на рисунке 9.
+Результат выполнения команды show ip route на Multilayer Switch10.
 
- 
+![image](https://user-images.githubusercontent.com/124536839/216854727-01b97f19-d0a4-4c4c-9008-4333eb62826b.png)
+Результат выполнения команд на Multilayer Switch1
 
-Рисунок 9 – Результат выполнения команд на Multilayer Switch1
+Результат выполнения команды show etherchannel summary на Multilayer Switch1.
 
-Результат выполнения команды show ip route на Multilayer Switch1представлен на рисунке 10.
+![image](https://user-images.githubusercontent.com/124536839/216854748-473c323e-e666-4def-af61-dac7115c895c.png)
+Результат выполнения команд на Multilayer Switch1
 
- 
+Результат выполнения команды show access-list summary на Multilayer Switch1.
 
-Рисунок 10 – Результат выполнения команд на Multilayer Switch1
-
-Результат выполнения команды show etherchannel summary на Multilayer Switch1представлен на рисунке 11.
-
-
- 
-
-Рисунок 11 – Результат выполнения команд на Multilayer Switch1
-
-Результат выполнения команды show access-list summary на Multilayer Switch1представлен на рисунке 12.
-
- 
-
-Рисунок 12 – Результат выполнения команд на Multilayer Switch1
+![image](https://user-images.githubusercontent.com/124536839/216854766-119cd1ec-1725-4da2-b210-5beb7beb54a2.png)
+Результат выполнения команд на Multilayer Switch1
 
 15) Подключение сетевое оборудования и конечные устройства.
-16) Настройка серверного оборудования. Настройка Email сервера пред-ставлена на рисунке 13.
+16) Настройка серверного оборудования.
 
- 
+![image](https://user-images.githubusercontent.com/124536839/216854776-d6dcb109-914f-4f85-8a5d-2866d9583656.png)
+Настройка Email сервера
 
-Рисунок 13 – Настройка Email сервера
-Настройка DHCP сервера представлена на рисунке 14.
+![image](https://user-images.githubusercontent.com/124536839/216854798-425cd0e1-07c2-4cfa-85ff-abf45a1e4ddc.png)
+Настройка DHCP сервера
 
- 
 
-Рисунок 14 – Настройка DHCP сервера
+![image](https://user-images.githubusercontent.com/124536839/216854835-924a40e9-4416-4361-9f1c-c67eff4190ac.png)
+Настройка FTP сервера
 
-Настройка FTP сервера представлена на рисунке 15.
+![image](https://user-images.githubusercontent.com/124536839/216854840-0577b4fa-eeb1-483a-a1fa-33cb2e35b25a.png)
+Настройка DNS сервера
 
- 
-
-Рисунок 15 – Настройка FTP сервера
-
-Настройка DNS сервера представлена на рисунке 16.
-
- 
-
-Рисунок 16 – Настройка DNS сервера
-
-Настройка HTTP сервера представлена на рисунке 17.
-
- 
-
-Рисунок 17 – Настройка HTTP сервера
+![image](https://user-images.githubusercontent.com/124536839/216854856-e1af1da4-870d-4997-8ec8-6295c7a630f8.png)
+Настройка HTTP сервера
 
 Аналогичным образом настраиваются Video и 1С сервера.
 17) Настройка NAT на маршрутизаторе. Интерфейсы маршрутизатора Router0 Gig 0/1 и Gig 0/2 являются внутренними, а интерфейс Gig 0/0 – внешним.
@@ -203,16 +185,14 @@ Router(config-if)#exit
 Router(config)#ip nat inside source list NAT interface g 0/0 overload
 Router(config-if)#end
 ```
-18) Проверка работоспособности сети. Проверка доступа к глобальной се-ти с компьютера, имеющего доступ к ней представлена на рисунке 18
+18) Проверка работоспособности сети. Проверка доступа к глобальной се-ти с компьютера, имеющего доступ к ней/
 
- 
+![image](https://user-images.githubusercontent.com/124536839/216854884-599e95c9-f7f1-49a5-b2dd-225f18b2ca8f.png)
+Проверка доступа к глобальной сети
 
-Рисунок 18 – Проверка доступа к глобальной сети
+19) Проверка доступа к серверу 1С с компьютера, не имеющего доступ к нему/
 
-19) Проверка доступа к серверу 1С с компьютера, не имеющего доступ к нему представлена на рисунке 19
-
- 
-
-Рисунок 19 – Проверка доступа к серверу 1С
+![image](https://user-images.githubusercontent.com/124536839/216854919-43e05a6b-5470-4551-9add-d0499026ecec.png)
+Проверка доступа к серверу 1С
 
 На основании проведенной проверки был сделан вывод что настройка сети выполнена правильно.
