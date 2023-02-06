@@ -22,11 +22,12 @@ Switch (config-if)# switchport trunk allowed vlan 1,10
 Switch (config-if)# no shutdown
 Switch (config-if)# exit
 ```
-4) Проверка правильность настроек при помощи команд show run и show vlan brief. Результат выполнения команд на Switch1 представлен на рисунке 7.
+4) Проверка правильность настроек при помощи команд show run и show vlan brief. .
 
- 
+ ![error](![image](https://user-images.githubusercontent.com/124536839/216854582-49853fa8-3afb-45ed-9c28-ea3d93bba130.png)
+)
 
-Рисунок 7 – Результат выполнения команд на Switch1
+Результат выполнения команд на Switch1
 
 5) Создание подсетей на коммутаторах L3 и присваивание им имен. При-мер создания vlan 10 на коммутаторе Multilayer Switch1:
 ```
