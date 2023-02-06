@@ -24,8 +24,7 @@ Switch (config-if)# exit
 ```
 4) Проверка правильность настроек при помощи команд show run и show vlan brief. .
 
- ![error](![image](https://user-images.githubusercontent.com/124536839/216854582-49853fa8-3afb-45ed-9c28-ea3d93bba130.png)
-)
+ ![image](https://user-images.githubusercontent.com/124536839/216854582-49853fa8-3afb-45ed-9c28-ea3d93bba130.png)
 
 Результат выполнения команд на Switch1
 
